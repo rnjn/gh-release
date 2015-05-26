@@ -15,11 +15,17 @@ Currently depends on the GoCD server to set a few environment vars -
 
 apart from this, there are some hard coded variables that I use on @ my current work.
 
+Dependencies - 
+	
+	* jq - [https://github.com/stedolan/jq](https://github.com/stedolan/jq) to be availble to the use that uploads
+
 To do -
 
 	* Currently has to be run on the Go server. Should be easy enough to use the GoCD api to fetch a binary to update
 	* Uploads only one file. Zip/tarball a folder and upload may be a better option
 	* Versioning is hard coded - may be better to depend on env var
 	
+Attributions - copied uploading script from wercker's [step-github-upload-asset](https://github.com/wercker/step-github-upload-asset/blob/master/run.sh)
+
 
 	
