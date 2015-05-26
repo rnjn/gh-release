@@ -1,10 +1,12 @@
 ### A shell script to upload releases to github (as part of a GoCD server job) - ###
 
 Does 2 things -
+
 	* Marks and tags a particular commit as a release
 	* Uploads binaries to github for the release created above
 
 Currently depends on the GoCD server to set a few environment vars -
+	
 	* GH_AUTH_TOKEN - for command line usage of github api, more [here](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 	* GH_REPO_NAME - name of the repository to tag and upload the build to
 	* GO_REVISION - commit hash to be releases
